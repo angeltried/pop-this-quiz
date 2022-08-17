@@ -25,4 +25,4 @@ Make a repository with a unique name.
 Made folder in my happy face finder api pop quiz inside folder then git clone ssh of repository using terminal.
 Save as readme.md into java pop quiz folder then using vs code create index.html and then folder for assets (styles.css, script.js).
 Start working on html and ccs to get position of each section once finish first attemt git push into repo.
-Open java pop quiz after all folders saved, git init , get status, add . , git commit -m "comment", git push -u origin main
+Open pop this quiz after all folders saved, git init , git status, add . , git commit -m "comment", git push -u origin main
