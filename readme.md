@@ -11,11 +11,15 @@ GIVEN I am taking a code quiz WHEN I click the start button THEN a timer starts 
     2. ! tab to begin. Change title and link css.
     3. Start with making a container found out you can use        .container tab to shortcut div with class.
     4. Inside the second div add h1 and button to start or view scores.
-    5. 
+    5. Made a game html linked to both css files.
+    6. Created the layout for the questions on game html.
 
 * css
-    1. Setting a root and * for original settings color, size, and spacing.
+    1. Setting a root and * for default settings color, size, and spacing.
     2. Rem is relivive to the root size. 
+    3. Going to begin centering container aswell as move the buttons and h1.
+    4. Will add styles to my buttons.
+    5. Made a game css.
 
 * java
 
