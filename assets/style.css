@@ -1,0 +1,26 @@
+:root {
+    background-color: rgb(146, 255, 127);
+    font-size: 60%;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 5.4rem;
+    color: rgb(255, 35, 79);
+    margin-bottom: 5rem;
+}
+
