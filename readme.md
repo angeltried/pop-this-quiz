@@ -1,6 +1,6 @@
 # Pop this quiz
 
-<img width="400" alt="Screen Shot 2022-09-03 at 10 57 34 AM" src="https://user-images.githubusercontent.com/106838166/188278621-d823cb9c-5881-41d1-b73a-cab8c981faa0.png">
+<img width="300" alt="Screen Shot 2022-09-03 at 10 57 34 AM" src="https://user-images.githubusercontent.com/106838166/188278621-d823cb9c-5881-41d1-b73a-cab8c981faa0.png">
 
 
 ## Acceptance Criteria
