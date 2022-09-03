@@ -16,7 +16,8 @@ GIVEN I am taking a code quiz WHEN I click the start button THEN a timer starts 
     7. will add another div to show what number question you are on.
     8. i want to make a progress bar instead of number of question to make it fancy.
     9. created a end.html
-    10. boiler plate with classes already made with a form to input a username.
+    10. boiler plate with classes already made with a form to input a username, buttons to submit or return to another html.
+    11. on html make event and disable so that you need in insert text in order to save hs.
 
 * css
     1. Setting a root and * for default settings color, size, and spacing.
@@ -25,6 +26,8 @@ GIVEN I am taking a code quiz WHEN I click the start button THEN a timer starts 
     4. Will add styles to my buttons.
     5. Made a game css.
     6. Add color for when you choose the questions red for wrong green for right.
+    7. linked ccs to endhtml to give same styles.
+    8. add for and intput to style the endhtml buttons.
 
 
 * java
@@ -41,6 +44,18 @@ GIVEN I am taking a code quiz WHEN I click the start button THEN a timer starts 
     11. changed const to make the progress bar.
     12. get a referance to progressbarfull so show when it fills up.
     13. made a end.js file
+    14. Started with save high score to connect the event.
+    15. referance other id to be able to collect the high score into a local storage.
+    14. need to convert to a jason array in order to keep highscores.
+    15. create a score object.
+    16. wanting to make sure the low score gets pushed out by using sort making own algorithem for array.
+    17. crate variable to give max number of high scores shown.
+    18. give a list when score name is entered.
+    19. Add var total time and the min with sec.
+    20. created a funtion checktime with id of timer.
+    21. when total seconds reaches 0 it will go back to begining or it will continue to play.
+    22. For each wrong answer it will subtract 10 from total seconds.
+
 ####
 
 Make a repository with a unique name.

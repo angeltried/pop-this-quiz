@@ -4,11 +4,16 @@ const progressText = document.getElementById("progressText");
 const scoreText = document.getElementById("score");
 const progressBarFull = document.getElementById("progressBarFull");
 
+var total_seconds =60*2;
+var c_minutes = parseInt(total_seconds/60);
+var c_seconds = parseInt(total_seconds%60);
+
 let currentQuestion = {};
 let acceptingAnswers = false;
 let score = 0;
 let questionCounter = 0;
 let avalibleQuestions = [];
+
 
 let questions = [
     {
@@ -51,12 +56,52 @@ let questions = [
         choice4: "1994",
         answer: 2
     },
+    {
+        question: "Was JavaScript used to create this quiz?",
+        choice1: "maybe",
+        choice2: "no",
+        choice3: "idk",
+        choice4: "yes",
+        answer: 4
+    },
+    {
+        question: "",
+        choice1: "",
+        choice2: "",
+        choice3: "",
+        choice4: "",
+        answer: 1
+    },
+    {
+        question: "",
+        choice1: "",
+        choice2: "",
+        choice3: "",
+        choice4: "",
+        answer: 3
+    },
+    {
+        question: "",
+        choice1: "",
+        choice2: "",
+        choice3: "",
+        choice4: "",
+        answer: 2
+    },
+    {
+        question: "",
+        choice1: "",
+        choice2: "",
+        choice3: "",
+        choice4: "",
+        answer: 4
+    },
 
 ];
 
 //constant
 const CORRECT_BONUS = 10;
-const MAX_QUESTIONS = 5;
+const MAX_QUESTIONS = 10;
 
 startGame = () => {
     questionCounter = 0;
@@ -66,9 +111,30 @@ startGame = () => {
     getNewQuestion();
 };
 
+function CheckTime(){
+    document.getElementById("timer").innerHTML
+    = + c_minutes + ' min ' + c_seconds + ' sec ' ;
+    if(total_seconds <=0){
+        // setTimeout('document.quiz.submit()',1);
+        alert("GAME OVER: You Lose");
+    return window.location.href= "index.html";
+        
+    } else{ 
+        total_seconds = total_seconds -1;
+        c_minutes = parseInt(total_seconds/60);
+        c_seconds = parseInt(total_seconds%60);
+        setTimeout("CheckTime()",1000);
+
+    } 
+}
+setTimeout("CheckTime()",1000);
+
+
+
+
 getNewQuestion = () => {
     if(avalibleQuestions.length === 0 || questionCounter >= MAX_QUESTIONS){
-        // localStorage.setItem("mostRecentScore", score);
+        localStorage.setItem("mostRecentScore", score);
         //go to the end page
         return window.location.assign("end.html");
     }
@@ -103,7 +169,11 @@ choices.forEach(choice => {
 
         if(classToApply === "correct") {
             incrementScore(CORRECT_BONUS);
-        }
+         }
+
+         if(classToApply === "incorrect") {
+            total_seconds = c_seconds -10;
+         }
 
         selectedChoice.parentElement.classList.add(classToApply);
 

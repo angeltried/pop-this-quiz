@@ -1,3 +1,5 @@
+
+
 .choice-container {
     display: flex;
     margin-bottom: 0.5rem;
@@ -27,7 +29,7 @@
 }
 
 .correct {
-    background-color: green;
+    background-color: rgb(2, 189, 2);
 }
 
 .incorrect {
@@ -61,4 +63,9 @@
     height: 3.4rem;
     background-color: rgb(255, 35, 79);
     width: 0%;
+}
+ 
+#timer{
+    color:rgb(255, 35, 79);
+    
 }
