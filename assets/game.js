@@ -64,44 +64,12 @@ let questions = [
         choice4: "yes",
         answer: 4
     },
-    {
-        question: "",
-        choice1: "",
-        choice2: "",
-        choice3: "",
-        choice4: "",
-        answer: 1
-    },
-    {
-        question: "",
-        choice1: "",
-        choice2: "",
-        choice3: "",
-        choice4: "",
-        answer: 3
-    },
-    {
-        question: "",
-        choice1: "",
-        choice2: "",
-        choice3: "",
-        choice4: "",
-        answer: 2
-    },
-    {
-        question: "",
-        choice1: "",
-        choice2: "",
-        choice3: "",
-        choice4: "",
-        answer: 4
-    },
 
 ];
 
 //constant
 const CORRECT_BONUS = 10;
-const MAX_QUESTIONS = 10;
+const MAX_QUESTIONS = 6;
 
 startGame = () => {
     questionCounter = 0;
